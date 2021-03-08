@@ -113,6 +113,7 @@ The Core ID is determined via hardware, which cannot be changed by softwares. Th
 The Peripheral ID is set to 0 if no protection is needed for the corresponding peripheral.
 
 
+
 - How is ID transferred?
 
 Using the user-defined signal in the AXI4 protocol (1024-bit long), there is no protocol overhead.
@@ -198,8 +199,6 @@ This is a speical peripheral with a predefined, immutable ID consisting of the c
 - Hardware implemented system functioning: multi-task, virtualized processors, hardware-context-switch
 - **Control-Flow Integrity**.
 
-
-(Look at the architecture graph)
 
 ---
 
