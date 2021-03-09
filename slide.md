@@ -13,8 +13,6 @@ marp: true
 
 # Backgrounds
 
-
-
 ## About this paper
 
 - Conference: ASIA CCS ’21 (16th), June 07–11, 2021, Hong Kong, China
@@ -61,8 +59,6 @@ Graz University of Technology, Austria
 ---
 
 # HECTOR-V Design
-
-
 
 ## Threat Model
 
@@ -304,8 +300,6 @@ The SCFP state is compressed into a 10-bit code used as the peripheral ID field 
 ---
 
 # Inspiration
-
-
 
 - How does PMP work in RISC-V?
 - Can we borrow the scheme of their security monitor for managing peripherals? (Different processes cooperates on a same device)
