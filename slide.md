@@ -1,5 +1,5 @@
 ---
-title: "Hector-V: A Heterogeneous CPU Architecture for Secure RISC-V Execution Environment"
+title: "Hector-V: A Heterogeneous CPU Architecture for Secure RISC-V Execution Environment, Paper Discussion"
 author: "Mingde Ren"
 institute: "COMPASS"
 urlcolor: blue
@@ -12,6 +12,8 @@ marp: true
 ---
 
 # Backgrounds
+
+---
 
 ## About this paper
 
@@ -59,6 +61,8 @@ Graz University of Technology, Austria
 ---
 
 # HECTOR-V Design
+
+---
 
 ## Threat Model
 
@@ -300,6 +304,8 @@ The SCFP state is compressed into a 10-bit code used as the peripheral ID field 
 ---
 
 # Inspiration
+
+---
 
 - How does PMP work in RISC-V?
 - Can we borrow the scheme of their security monitor for managing peripherals? (Different processes cooperates on a same device)
