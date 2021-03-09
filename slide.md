@@ -300,7 +300,7 @@ The SCFP state is compressed into a 10-bit code used as the peripheral ID field 
 
 Last Week Accomplishment
 
-- Learned about SPI, I2C protocol and their different to UART. However, after checking qemu source code, there is no GPIO pins provided by qemu. (Check the figure in the following slide)
+- Learned about SPI, I2C protocol and their different to UART. However, after checking qemu source code, there is no GPIO pins provided by qemu. (Check the figure in the following slide: https://github.com/qemu/qemu/blob/master/hw/riscv/virt.c)
 - Nevertheless, RTC is provided:
 	- Implemented an RTC driver
 	- Provided a standard gettimeofday() syscall
@@ -309,8 +309,6 @@ Last Week Accomplishment
 ---
 
 ![QEMU_Memory](qemu-memory.png)
-
-(from: https://github.com/qemu/qemu/blob/master/hw/riscv/virt.c)
 
 ---
 
