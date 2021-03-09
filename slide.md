@@ -58,6 +58,8 @@ Graz University of Technology, Austria
 - Pros: fast secure commnunication channels, probing and sniffing attacks mitigated, cache/transient side channel mitigated
 - Cons: additional hardware required
 
+---
+
 # HECTOR-V Design
 
 
@@ -92,7 +94,7 @@ To guarantee this two goals, a TEE is proposed with two key parts: a basic HECTO
 
 ---
 
-![detailed](detailed.png)
+![Detailed Architecture](detailed.png)
 
 ---
 
@@ -220,7 +222,7 @@ Video can be found here: https://www.youtube.com/watch?v=upkZZldpljA
 
 ---
 
-![detailed](detailed.png)
+![Detailed Architecture again](detailed.png)
 
 ---
 
@@ -278,7 +280,7 @@ The SCFP state is compressed into a 10-bit code used as the peripheral ID field 
 
 ---
 
-![detailed](detailed.png)
+![Detailed Architecture one more time](detailed.png)
 
 ---
 
@@ -299,6 +301,8 @@ The SCFP state is compressed into a 10-bit code used as the peripheral ID field 
 10. Do another hash check for the Linux image (Where is this hash stored?)
 11. Linux booted and it claim the first peripherals by sending requests to the security monitor
 
+---
+
 # Inspiration
 
 
@@ -309,7 +313,7 @@ The SCFP state is compressed into a 10-bit code used as the peripheral ID field 
 
 ---
 
-Last Week Accomplishment
+## Last Week Accomplishment
 
 - Learned about SPI, I2C protocol and their different to UART. However, after checking qemu source code, there is no GPIO pins provided by qemu. (Check the figure in the following slide: https://github.com/qemu/qemu/blob/master/hw/riscv/virt.c)
 - Nevertheless, RTC is provided:
@@ -323,7 +327,7 @@ Last Week Accomplishment
 
 ---
 
-Next Week Plan
+## Next Week Plan
 
 - Comfirm whether PMP machanism works as we thought
 - Learn about FPGA and starts to try to transfer to real board 
