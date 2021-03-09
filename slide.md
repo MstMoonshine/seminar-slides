@@ -56,8 +56,6 @@ Graz University of Technology, Austria
 - Pros: fast secure commnunication channels, probing and sniffing attacks mitigated, cache/transient side channel mitigated
 - Cons: additional hardware required
 
----
-
 # HECTOR-V Design
 
 ## Threat Model
@@ -207,6 +205,8 @@ This picture is from one of the talks found at riscv.org: [Using the RISC-V PMP 
 
 Video can be found here: https://www.youtube.com/watch?v=upkZZldpljA
 
+---
+
 ![PMP_Peripheral](pmp_peripheral.png)
 
 ---
@@ -290,9 +290,7 @@ The SCFP state is compressed into a 10-bit code used as the peripheral ID field 
 10. Do another hash check for the Linux image (Where is this hash stored?)
 11. Linux booted and it claim the first peripherals by sending requests to the security monitor
 
----
-
-## Inspiration
+# Inspiration
 
 - How does PMP work in RISC-V?
 - Can we borrow the scheme of their security monitor for managing peripherals? (Different processes cooperates on a same device)
