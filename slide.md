@@ -13,6 +13,8 @@ marp: true
 
 # Backgrounds
 
+
+
 ## About this paper
 
 - Conference: ASIA CCS ’21 (16th), June 07–11, 2021, Hong Kong, China
@@ -58,6 +60,8 @@ Graz University of Technology, Austria
 
 # HECTOR-V Design
 
+
+
 ## Threat Model
 
 - a combination of bugs in kernel exists
@@ -67,8 +71,11 @@ Graz University of Technology, Austria
 - malicious trustlets
 - ...
 
-### Summary
+### Sumary
+
 Assuming a powerful attacker having full control over user app, OS, turstlets or even hypervisor running on the application processor.
+
+---
 
 ## Goals
 
@@ -76,6 +83,8 @@ Assuming a powerful attacker having full control over user app, OS, turstlets or
 - Control-flow Integrity
 
 To guarantee this two goals, a TEE is proposed with two key parts: a basic HECTOR-V and a RVSCP (RISCV Secure Co-Processor) extension (we will mainly discuss the extended architecture with both parts)
+
+---
 
 ## Design
 
@@ -291,6 +300,8 @@ The SCFP state is compressed into a 10-bit code used as the peripheral ID field 
 11. Linux booted and it claim the first peripherals by sending requests to the security monitor
 
 # Inspiration
+
+
 
 - How does PMP work in RISC-V?
 - Can we borrow the scheme of their security monitor for managing peripherals? (Different processes cooperates on a same device)
