@@ -11,7 +11,23 @@ lang: en-US
 marp: true
 ---
 
-# Background
+# Backgrounds
+
+## About this paper
+
+- Conference: ASIA CCS ’21 (16th), June 07–11, 2021, Hong Kong, China
+
+- Author Information
+
+(*Anonymous Author(s)* shown in the ASIA CCS preprint, but can be found on arXiv.)
+
+[Pascal Nasahl](https://arxiv.org/search/cs?searchtype=author&query=Nasahl%2C+P), [Robert Schilling](https://arxiv.org/search/cs?searchtype=author&query=Schilling%2C+R), [Mario Werner](https://arxiv.org/search/cs?searchtype=author&query=Werner%2C+M), [Stefan Mangard](https://arxiv.org/search/cs?searchtype=author&query=Mangard%2C+S)
+
+Graz University of Technology, Austria
+
+(Prof. Mangard is one of the authors of *Meltdown*.)
+
+---
 
 ## Existing TEEs
 
@@ -93,7 +109,7 @@ The entity that can configure the security monitor. The ownership can be transfe
 
 Use AMBA AXI4 and AXI4-lite protocols for communication between components of HECTOR-V. AXI4 is for data tranferring and AXI4-lite for configuration.
 
---- 
+---
 
 ## How do the Trusted I/O Paths work?
 
@@ -187,6 +203,12 @@ This is a speical peripheral with a predefined, immutable ID consisting of the c
 
 **Physical Memory Protection** or **Physical Address Protection** ?
 
+This picture is from one of the talks found at riscv.org: [Using the RISC-V PMP with an Embedded RTOS to Achieve Process Separation and Isolation](https://riscv.org/wp-content/uploads/2018/12/Using-the-RISC-V-PMP-with-an-Embedded-RTOS-to-Achieve-Process-Separation-and-Isolation-Labrosse.pdf), which shows that peripherals are under protection from PMP (TOR and NA4 are two address modes of PMP).
+
+Video can be found here: https://www.youtube.com/watch?v=upkZZldpljA
+
+![PMP_Peripheral](pmp_peripheral.png)
+
 ---
 
 ![detailed](detailed.png)
@@ -198,7 +220,6 @@ This is a speical peripheral with a predefined, immutable ID consisting of the c
 ### Key Feature
 - Hardware implemented system functioning: multi-task, virtualized processors, hardware-context-switch
 - **Control-Flow Integrity**.
-
 
 ---
 
@@ -269,16 +290,29 @@ The SCFP state is compressed into a 10-bit code used as the peripheral ID field 
 10. Do another hash check for the Linux image (Where is this hash stored?)
 11. Linux booted and it claim the first peripherals by sending requests to the security monitor
 
+---
+
+## Inspiration
+
+- How does PMP work in RISC-V?
+- Can we borrow the scheme of their security monitor for managing peripherals? (Different processes cooperates on a same device)
+- Verification of image at boot time?
 
 ---
 
 Last Week Accomplishment
 
-- Learned about SPI, I2C protocol and their different to UART (However, after checking qemu source code, there is no GPIO pins provided by qemu)
+- Learned about SPI, I2C protocol and their different to UART. However, after checking qemu source code, there is no GPIO pins provided by qemu. (Check the figure in the following slide)
 - Nevertheless, RTC is provided:
 	- Implemented an RTC driver
 	- Provided a standard gettimeofday() syscall
 - Prepare for the paper discussion
+
+---
+
+![QEMU_Memory](qemu-memory.png)
+
+(from: https://github.com/qemu/qemu/blob/master/hw/riscv/virt.c)
 
 ---
 
