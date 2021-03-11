@@ -35,6 +35,8 @@ marp: true
 
 ---
 
+## Key Feature
+
 - Memory Protection: using RISC-V PMP scheme.
 
 - Secure I/O: drivers are provided in unwritable flash, copy-on-need, avoiding privilege lifting. PMP could be used for permission management of peripherals.
@@ -45,13 +47,15 @@ marp: true
 
 ---
 
+## Architecture
 
 ![architecture](architecture.png)
-
 
 # Work Flow and Current State
 
 ---
+
+## What have been done
 
 - [x] Modify bootloader to initialize secure monitor
 
@@ -68,6 +72,8 @@ marp: true
 - [x] Build interrupt & exception manager
 
 ---
+
+## What is to be done
 
 - [ ] Build permission manager, handle permissions of TEE/REE
 
@@ -89,6 +95,8 @@ marp: true
 
 ---
 
-- Hard to design permission management scheme for multiply cores accessing one peripheral device
+## Multicore Problem
+
+- Hard to design permission management scheme for multiple cores accessing one peripheral device
   
   - Maybe implementing a lock scheme
