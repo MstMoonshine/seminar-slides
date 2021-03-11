@@ -11,6 +11,8 @@ lang: en-US
 marp: true
 ---
 
+
+
 # Motivation
 
 ---
@@ -49,6 +51,8 @@ marp: true
 
 # Work Flow and Current State
 
+---
+
 - [x] Modify bootloader to initialize secure monitor
 
 - [x] Create an enclave and run simple EAPPs
@@ -83,8 +87,8 @@ marp: true
 
 # Current Problems
 
+---
+
 - Hard to design permission management scheme for multiply cores accessing one peripheral device
   
-  - Maybe implementing a lock scheme?
-
-- 
+  - Maybe implementing a lock scheme
