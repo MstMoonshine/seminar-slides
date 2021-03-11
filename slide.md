@@ -11,8 +11,6 @@ lang: en-US
 marp: true
 ---
 
-
-
 # Motivation
 
 ---
@@ -47,7 +45,9 @@ marp: true
 
 ---
 
-![]()
+
+![architecture](architecture.png)
+
 
 # Work Flow and Current State
 
