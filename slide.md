@@ -47,7 +47,7 @@ marp: true
 
 ---
 
-![](/Users/renmingde/Library/Application%20Support/marktext/images/340a2e1e6f5503ca3e2ff9610e6a954a71177148.png)
+![]()
 
 # Work Flow and Current State
 
