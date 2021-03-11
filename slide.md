@@ -47,8 +47,6 @@ marp: true
 
 ---
 
-## Architecture
-
 ![architecture](architecture.png)
 
 # Work Flow and Current State
